@@ -1,12 +1,15 @@
 import React from 'react';
-import Hero from './Hero';
+import Footer from '../Shared/Footer/Footer';
+import Navigation from '../Shared/Navbar/Navigation';
+import Hero from '../Home/Hero'
 
 const Home = () => {
     return (
     <>
-    <Hero></Hero>
-   
-    
+    {/* <Navigation></Navigation> */}
+    <h1>home</h1>
+     <Hero></Hero>
+    {/* <Footer></Footer> */}
     </>
     );
 };
