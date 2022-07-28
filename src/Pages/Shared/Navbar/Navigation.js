@@ -40,9 +40,9 @@ const Navigation = () => {
         <li>
           <a>Blogs</a>
         </li>
-        <li>
+        {/* <li>
           <a>Apply </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
