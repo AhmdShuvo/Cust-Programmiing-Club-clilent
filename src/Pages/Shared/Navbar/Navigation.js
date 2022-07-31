@@ -27,24 +27,25 @@ const Navigation = () => {
         className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
       >
         <li>
-          <a >Homepage</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href='/#Event'>EVENTS</a>
+          <Link to='/Login'>LogIn</Link>
         </li>
         <li>
-          <a>Research</a>
+          <Link to='/Research'>Research</Link>
         </li>
         <li>
-          <a>ABout</a>
+          <Link to='/about'>About</Link>
         </li>
         <li>
-          {/* <a>Blogs</a> */}
-          <NavLink as={Link} to="/blog">Blog</NavLink>
+          <Link to='blogs'>Blogs</Link>
         </li>
         <li>
-          {/* <a>Apply </a> */}
-          <NavLink as={Link} to="/notice">Notice</NavLink>
+          <Link to='notice'>notice</Link>
+        </li>
+        <li>
+          <Link to='/apply'>Apply </Link>
         </li>
       </ul>
     </div>
