@@ -1,3 +1,5 @@
+/* Committee members container */
+
 .commiteeMemberscontainer {
     position: relative;
     display: flex;
@@ -6,11 +8,12 @@
     flex-wrap: wrap;
 }
 
+// background box resizing
 .commiteeMemberscontainer .box {
     position: relative;
-    width: 30rem;
-    height: 30rem;
-    margin: 4rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 4rem 6rem;
 }
 
 .commiteeMemberscontainer .box:hover .imgBox {
@@ -21,6 +24,7 @@
     transform: translate(3.5rem, 3.5rem);
 }
 
+// image container resizing
 .imgBox {
     position: absolute;
     top: 0;
@@ -30,14 +34,15 @@
     z-index: 2;
     transition: all 0.5s ease-in-out;
 }
-
+// image resizing
 .imgBox img {
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
     object-fit: cover;
     resize: both;
 }
 
+// behind content
 .content {
     position: absolute;
     top: 0;

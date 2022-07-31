@@ -4,7 +4,8 @@ import "./vujung.css";
 const CommitteeMemmbers = () => {
     return (
         <div>
-            <div class="flex flex-wrap justify-center -mx-4 mt-32">
+            {/* This is the heading section of this page  */}
+            <div class="flex flex-wrap justify-center mx-4 mt-32">
                 <div class="w-full px-4">
                     <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
                         <span class="font-semibold text-lg  mb-2 block text-white">
@@ -20,6 +21,7 @@ const CommitteeMemmbers = () => {
                     </div>
                 </div>
             </div>
+            {/* Committee members container */}
             <div class="commiteeMemberscontainer">
                 <div class="box">
                     <div class="imgBox">
@@ -81,7 +83,7 @@ const CommitteeMemmbers = () => {
                     </div>
                     <div class="content">
                         <h2>Fahad Bin Aziz<br />
-                            <span>WEB CONTENT & MEDIA MANAGER</span></h2>
+                            <span>MEDIA MANAGER</span></h2>
                     </div>
                 </div>
                 <div class="box">
