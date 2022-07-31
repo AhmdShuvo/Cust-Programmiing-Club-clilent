@@ -36,10 +36,13 @@ const Navigation = () => {
           <Link to='/Research'>Research</Link>
         </li>
         <li>
-          <Link to='/About'>About</Link>
+          <Link to='/about'>About</Link>
         </li>
         <li>
-          <Link to='/Blogs'>Blogs</Link>
+          <Link to='blogs'>Blogs</Link>
+        </li>
+        <li>
+          <Link to='notice'>notice</Link>
         </li>
         <li>
           <Link to='/apply'>Apply </Link>
