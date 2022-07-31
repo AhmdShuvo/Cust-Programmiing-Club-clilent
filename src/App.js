@@ -8,6 +8,8 @@ import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import Event from './Pages/Event/Event';
 import Login from './Pages/LogIn/LogIn/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import Blog from './Pages/Blog/Blog';
+import Notice from './Pages/Notice/Notice';
 
 function App() {
   return (
@@ -18,16 +20,15 @@ function App() {
               
               <Route index element={<Home />}/>
               <Route path="Login" element={<Login />}/> 
+              <Route path="/blog" element={<Blog />} />
+      <Route path="/notice" element={<Notice />} />
               <Route path="*" element={<NotFound />}/>
+
               
         </Routes>
        <Footer></Footer>
   
     </Router>
-    
-       
-    
-  );
-}
+  )}
 
 export default App;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return (
@@ -48,7 +48,7 @@ const Navigation = () => {
     </div>
   </div>
   <div className="navbar-center">
-    <a href="https://cust.edu.bd/" className="btn btn-ghost normal-case text-xl"> <img src='./images/main_logo_text.png'width={40} ></img>  </a><span className='m-2'>Cust Programming Club</span>
+    <a href="https://cust.edu.bd/" className="btn btn-ghost normal-case text-xl"> <img src='./images/cpclogo.png' alt= "" width={40} ></img>  </a><span className='m-2'>Cust Programming Club</span>
   </div>
   <div className="navbar-end">
     
