@@ -15,9 +15,9 @@
 
 .commiteeMemberscontainer .box {
   position: relative;
-  width: 30rem;
-  height: 30rem;
-  margin: 4rem;
+  width: 20rem;
+  height: 20rem;
+  margin: 2.5rem;
 }
 
 .commiteeMemberscontainer .box:hover .imgBox {
@@ -42,11 +42,16 @@
 }
 
 .imgBox img {
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   resize: both;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .content {
@@ -60,25 +65,27 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #193d52;
   z-index: 1;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   text-align: center;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  border-radius: 20px;
+ 
 }
 
 .content h2 {
   display: block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: white;
   font-weight: 500;
   line-height: 2rem;
-  letter-spacing: 1px;
+
 }
 
 .content span {
@@ -97,5 +104,6 @@
     -webkit-transform: translate(0, -3.5rem);
             transform: translate(0, -3.5rem);
   }
+
 }
 /*# sourceMappingURL=vujung.css.map */
