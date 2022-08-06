@@ -9,6 +9,7 @@ import Login from './Pages/LogIn/LogIn/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Blog from './Pages/Blog/Blog';
 import Notice from './Pages/Notice/Notice';
+import Upload from './Pages/Blog/UploadBlogs/Upload';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="Login" element={<Login />} />
         <Route path="blogs" element={<Blog />} />
         <Route path="notice" element={<Notice />} />
+        <Route path="events" element={<Event />} />
+        <Route path="upload" element={<Upload />} />
         {/* <Route path="*" element={<NotFound />} /> */}
 
 
