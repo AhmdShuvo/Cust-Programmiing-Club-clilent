@@ -7,7 +7,7 @@ const Home = () => {
     return (
     <>
     {/* <Navigation></Navigation> */}
-    <h1>home</h1>
+    
      <Hero></Hero>
     {/* <Footer></Footer> */}
     </>

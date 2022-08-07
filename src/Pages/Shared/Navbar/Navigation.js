@@ -30,7 +30,7 @@ const Navigation = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to='/Login'>LogIn</Link>
+          <Link to='/Register'>Sign Up</Link>
         </li>
         <li>
           <Link to='/Research'>Research</Link>
@@ -44,6 +44,7 @@ const Navigation = () => {
         <li>
           <Link to='/apply'>Apply </Link>
         </li>
+
       </ul>
     </div>
   </div>
