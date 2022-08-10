@@ -14,6 +14,11 @@
     const [userType, setUserType] = useState('');
     const [token, setToken] = useState('');
     const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
+
+
+
+
 // register
 
     const registerUser = (email, password, name, ) => {
@@ -47,6 +52,43 @@
             })
             .finally(() => setIsLoading(false));
     }
+
+
+    // User Login
+    const loginUser = (email, password, location, history) => {
+        setIsLoading(true)
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // const redirect_uri = location.state?.from || '/home';
+                // history.replace(redirect_uri);
+                setAuthError('');
+            })
+            .catch((error) => {
+
+                setAuthError(error.message)
+            })
+            .finally(() => setIsLoading(false));
+    }
+
+    const signInWithGoogle = (location, history) => {
+        setIsLoading(true)
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+
+                const user = result.user;
+                saveUser(user.email, user.displayName, 'PUT');
+
+                // const destination = location?.history?.from || '/appointment';
+                // history.replace(destination);
+                setAuthError('');
+
+            }).catch((error) => {
+
+                setAuthError(error.message)
+
+            }).finally(() => setIsLoading(false));
+    }
+
 
      // Observe user state
 
@@ -108,9 +150,9 @@
         isLoading,
         
         registerUser,
-       
-       
-        
+        signInWithGoogle,
+        loginUser,
+        token,
         userType,
         
         logOut

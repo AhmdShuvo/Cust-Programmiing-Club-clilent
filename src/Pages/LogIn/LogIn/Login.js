@@ -1,7 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import useAuth from '../../../hooks/useAuth';
+import Alertp from '../../Alert/Alertp'
 const Login = () => {
+
+
+  const [loginData, setLoginData] = useState({});
+  const { loginUser, user, isLoading, authError } = useAuth();
+
+  // const location = useLocation();
+  // const history = useHistory();
+
+
+
+  const handleOnChange = e => {
+      const field = e.target.name;
+      const value = e.target.value;
+      const newLoginData = { ...loginData }
+      newLoginData[field] = value;
+      setLoginData(newLoginData);
+
+  }
+
+  const handleLogIn = e => {
+      loginUser(loginData.email, loginData.password);
+      e.preventDefault();
+  }
+
+
+
+console.log(handleLogIn)
+
+
+
+
     return (
        
           
@@ -15,21 +47,22 @@ const Login = () => {
             <img className="rounded-t-lg" src="https://www.hirestar.io/jp/assets/login_new.jpg" alt="" />
           </a>
           <div className="p-6">
-          <form>
+          {authError && <Alertp >{authError}</Alertp>}
+          <form onSubmit={handleLogIn}>
                
                {/* Email input */}
                <div className="mb-6">
-                 <input type="text" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" />
+                 <input type="text"  name="email" onChange={handleOnChange}  className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" required/>
                </div>
                {/* Password input */}
                <div className="mb-6">
-                 <input type="password" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password" />
+                 <input type="password" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password"name="password" onChange={handleOnChange} required />
                </div>
                <div className="flex justify-between items-center mb-6">
                  <div className="form-group form-check">
                    
                  </div>
-                 <a href="#!" className="text-gray-800">Forgot password?</a>
+                 <Link className="forgot-password" to="/forgot-password">Forget Password? </Link>
                </div>
                <div className="text-center lg:text-left">
                  <button type="button" className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
