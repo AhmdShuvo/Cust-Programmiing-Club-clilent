@@ -2,14 +2,22 @@ import React from 'react';
 import "./Blog.css"
 
 const Blog = () => {
+   const data = localStorage.getItem('str')
+   const parser = new DOMParser();
+   const doc = parser.parseFromString(data, 'text/html')
+   console.log(doc.body);
+
+   const element = [doc.body]
    return (
       <div>
+
+
          {/* <h1 className='text-center text-4xl'>BLOGS</h1> */}
          <div className='sticky top-0 '>
 
-           <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
+            <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
 
-           
+
                <i className="fa-solid fa-plus"></i>
             </button>
          </div>
