@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import ReactQuill from "react-quill"
 import 'react-quill/dist/quill.snow.css'
 import { useQuill } from 'react-quilljs';
+import RedAlert from '../../Shared/RedAlert/RedAlert';
 const Upload = () => {
-  const [data,setData]=useState({})
-const [document,setDocument]=useState()
+  const [data,setData]=useState(null)
+const [error,setError]=useState()
     const { quill, quillRef } = useQuill();
 //    const parser=str=>{
 //    
@@ -12,7 +13,7 @@ const [document,setDocument]=useState()
 // 	localStorage.setItem("str",doc.body)
 //     console.log(doc.body);
 //    }
-console.log(data)
+
     useEffect(() => {
         if (quill) {
           quill.on('text-change', (delta, oldDelta, source) => {
@@ -25,23 +26,59 @@ console.log(data)
         }
       }, [quill]);
 
-      
-
     //   parser(data)
+    const handleSubmit=e=>{
+      e.preventDefault()
 
-    const parser =new DOMParser();
+      if (data==null) {
+      
+       setError("Please Write something in blog")
+       return
+      }
+      else{
+const formData=new FormData()
+
+      //  const BlogData={
+      //   data
+      //  }
+      formData.append('blog', data)
+
+       fetch("http://localhost:9000/blogs", {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: formData
+        }).then(res=>console.log(res))
+        
+        .catch((err=>console.log(err)))
+        
+      
+    }
+  }
+
+   
   
     return (
         <div className='container'>
-   <div >
-      <div ref={quillRef} />
+  <form onSubmit={handleSubmit} action="">
+
+    <div>
+      <label htmlFor="name">Name</label>
+      <input type="text" />
+    </div>
+  {error&& <RedAlert
+  message={error}
+  ></RedAlert>}
+  <div >
+      <div aria-required ref={quillRef} />
     </div>
 
-{
-  
-  <div dangerouslySetInnerHTML={{__html:data}}></div>
-}
-    
+    <button type="submit">Post Your Blog</button>
+  </form>
+
+
     </div>
 
 
