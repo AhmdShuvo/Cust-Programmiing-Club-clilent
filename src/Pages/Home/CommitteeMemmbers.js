@@ -32,15 +32,7 @@ const CommitteeMemmbers = () => {
                             <span>ADVISOR</span></h2>
                     </div>
                 </div>
-                <div className="box">
-                    <div className="imgBox">
-                        <img src="https://img.freepik.com/free-photo/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign_273609-30676.jpg?size=626&ext=jpg" alt="" />
-                    </div>
-                    <div className="content">
-                        <h2>Imran Nazir<br />
-                            <span>TRAINER</span></h2>
-                    </div>
-                </div>
+             
                 <div className="box">
                     <div className="imgBox">
                         <img src="./images/Banjir-ah.jpeg" alt="" />
