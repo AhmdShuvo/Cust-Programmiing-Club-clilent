@@ -75,7 +75,7 @@ const formData=new FormData()
       <div aria-required ref={quillRef} />
     </div>
 
-    <button type="submit">Post Your Blog</button>
+    <button style={{float:'right'}} className='btn btn-wide my-10' type="submit">Post Your Blog</button>
   </form>
 
 

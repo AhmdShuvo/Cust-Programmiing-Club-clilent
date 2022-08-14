@@ -3,7 +3,7 @@ import './gallary.css'
 
 const Gallary = () => {
     return (
-        <section className='container mt-8 '>
+        <section className=' mt-8 '>
             <center><h1 className='text-7xl my-7'>Gallary </h1></center>
             <div className="grid image-grid">
   <div className="grid-block">
