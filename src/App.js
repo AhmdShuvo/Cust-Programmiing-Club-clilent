@@ -23,7 +23,7 @@ function App() {
         <Route path="blogs" element={<Blog />} />
         <Route path="notice" element={<Notice />} />
         <Route path="events" element={<Event />} />
-        <Route path="upload" element={<Upload />} />
+        <Route path="/blogs/upload" element={<Upload />} />
         {/* <Route path="*" element={<NotFound />} /> */}
 
 
