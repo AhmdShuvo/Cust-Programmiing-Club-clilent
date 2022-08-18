@@ -21,7 +21,7 @@
 
 // register
 
-    const registerUser = (email, password, name, ) => {
+    const registerUser = (email, password, name,history ) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -43,7 +43,7 @@
                     // ...
                 });
 
-                // history.replace('/');
+                history('/')
             })
             .catch((error) => {
 
@@ -55,39 +55,31 @@
 
 
     // User Login
-    const loginUser = (email, password, location, history) => {
-        setIsLoading(true)
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // const redirect_uri = location.state?.from || '/home';
-                // history.replace(redirect_uri);
-                setAuthError('');
-            })
-            .catch((error) => {
+    const loginUser = (email, password, location) => {
+        // setIsLoading(true)
+        // signInWithEmailAndPassword(auth, email, password)
+        //     .then((userCredential) => {
+        //         // const redirect_uri = '/';
+        //         // history(redirect_uri);
+        //         setAuthError('');
+        //     })
+        //     .catch((error) => {
 
-                setAuthError(error.message)
-            })
-            .finally(() => setIsLoading(false));
+        //         setAuthError(error.message)
+        //     })
+        //     .finally(() => setIsLoading(false));
+
+
+
+        return signInWithEmailAndPassword(auth,email,password)
+
     }
 
-    const signInWithGoogle = (location, history) => {
-        setIsLoading(true)
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
 
-                const user = result.user;
-                saveUser(user.email, user.displayName, 'PUT');
 
-                // const destination = location?.history?.from || '/appointment';
-                // history.replace(destination);
-                setAuthError('');
 
-            }).catch((error) => {
+    
 
-                setAuthError(error.message)
-
-            }).finally(() => setIsLoading(false));
-    }
 
 
      // Observe user state
@@ -124,13 +116,13 @@
     }
     console.log(user.email)
     useEffect(() => {
-        fetch(`https://shielded-falls-80975.herokuapp.com/users/${user?.email}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                setUserType(data)
-            })
-            .catch((e) => { })
+        // fetch(`https://shielded-falls-80975.herokuapp.com/users/${user?.email}`)
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data)
+        //         setUserType(data)
+        //     })
+        //     .catch((e) => { })
     }, [user.email])
 
     // User Logout
@@ -150,7 +142,7 @@
         isLoading,
         
         registerUser,
-        signInWithGoogle,
+       
         loginUser,
         token,
         userType,

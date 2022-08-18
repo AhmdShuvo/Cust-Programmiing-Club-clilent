@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useAuth from "../../../hooks/useAuth"
 import Alert from '../../Alert/Alert';
 import Alertp from  "../../Alert/Alertp"
 const Register = () => {
   const [loginData, setLoginData] = useState({});
   
-  
+  const history = useNavigate()
   const { registerUser, isLoading, user, authError } = useAuth()
   const handleOnChange = e => {
       const field = e.target.name;
@@ -24,7 +24,7 @@ const Register = () => {
         alert("Didn't matched the password")
         return;
     }
-    registerUser(loginData.email, loginData.password, loginData.name);
+    registerUser(loginData.email, loginData.password, loginData.name, history);
 
 }
 console.log(loginData)

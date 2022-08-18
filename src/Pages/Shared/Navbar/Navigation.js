@@ -72,7 +72,7 @@ const Navigation = () => {
 
                             {
                                 user.email ?
-                                    <Link to="/home">  <button onClick={logoutWithAlart} className="signup-button ms-5">Log Out</button></Link>
+                                    <Link to="/">  <button onClick={logoutWithAlart} className="signup-button ms-5">Log Out</button></Link>
                                     :
                                     <Link to="/register"> <button className="signup-button ">Sign Up</button></Link>
                             }

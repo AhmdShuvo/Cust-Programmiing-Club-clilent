@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import Alertp from '../../Alert/Alertp'
 const Login = () => {
@@ -8,9 +8,8 @@ const Login = () => {
   const [loginData, setLoginData] = useState({});
   const { loginUser, user, isLoading, authError } = useAuth();
 
-  // const location = useLocation();
-  // const history = useHistory();
-
+  const location = useLocation();
+  const history = useNavigate();
 
 
   const handleOnChange = e => {
@@ -23,13 +22,19 @@ const Login = () => {
   }
 
   const handleLogIn = e => {
-      loginUser(loginData.email, loginData.password);
+      loginUser(loginData.email, loginData.password)
+      .then((usercredential)=>{const user= usercredential.user
+      isLoading(false)
+    history('/')
+    });
+
       e.preventDefault();
   }
+ 
+console.log(loginData)
 
 
-
-console.log(handleLogIn)
+// console.log(handleLogIn)
 
 
 
@@ -65,7 +70,7 @@ console.log(handleLogIn)
                  <Link className="forgot-password" to="/forgot-password">Forget Password? </Link>
                </div>
                <div className="text-center lg:text-left">
-                 <button type="button" className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                 <button type="submit" className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                    Login
                  </button>
                  <p className="text-sm font-semibold mt-2 pt-1 mb-0 text-gray-800">
