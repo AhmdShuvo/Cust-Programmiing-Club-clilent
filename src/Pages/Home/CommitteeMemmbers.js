@@ -56,7 +56,7 @@ const CommitteeMemmbers = () => {
                     </div>
                     <div className="content">
                         <h2>Ariful Islam <br />
-                            <span>VICE PRECIDENT</span></h2>
+                            <span><h3 className='text-xl'>VICE PRECIDENT</h3></span></h2>
                     </div>
                 </div>
                 <div className="box">
@@ -65,7 +65,7 @@ const CommitteeMemmbers = () => {
                     </div>
                     <div className="content">
                         <h2>Shakil Ahmed Khan<br />
-                            <span>SECRETARY</span></h2>
+                            <span><h3 className='tex-xl'>SECRETARY</h3></span></h2>
                     </div>
                 </div>
                 <div className="box">
@@ -74,7 +74,7 @@ const CommitteeMemmbers = () => {
                     </div>
                     <div className="content">
                         <h2>Nabid Hasan<br />
-                            <span>PROJECT MANAGER</span></h2>
+                            <span><h3 className="text-xl">PROJECT MANAGER</h3></span></h2>
                     </div>
                 </div>
                 <div className="box">
@@ -83,7 +83,7 @@ const CommitteeMemmbers = () => {
                     </div>
                     <div className="content">
                         <h2>Fahad Bin Aziz<br />
-                            <span>MEDIA MANAGER</span></h2>
+                            <span><h3 className='text-xl'>WEB CONTENT & MEDIA MANAGER</h3></span></h2>
                     </div>
                 </div>
                 <div className="box">
@@ -92,7 +92,7 @@ const CommitteeMemmbers = () => {
                     </div>
                     <div className="content">
                         <h2>Rafiun Israt<br />
-                            <span>PUBLIC SPOKEN PERSON</span></h2>
+                            <span><h3 className='text-xl'>PUBLIC SPOKEN PERSON</h3></span> </h2>
                     </div>
                 </div>
                 <div className="box">

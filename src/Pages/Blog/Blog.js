@@ -8,11 +8,18 @@ const Blog = () => {
          {/* <h1 className='text-center text-4xl'>BLOGS</h1> */}
          <div className='sticky top-0 '>
 
+
             <Link to= "/texteditor">
                <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
                   <i className="fa-solid fa-plus"></i>
                </button>
             </Link>
+
+           <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
+
+           
+               <i className="fa-solid fa-plus"></i>
+            </button>
          </div>
 
          {/* <!-- ====== Blog Section Start --> */}
