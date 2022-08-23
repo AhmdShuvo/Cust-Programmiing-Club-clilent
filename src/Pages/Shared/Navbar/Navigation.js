@@ -30,22 +30,16 @@ const Navigation = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to='/Login'>LogIn</Link>
-            </li>
-            <li>
-              <Link to='/Research'>Research</Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
+              <Link to='notice'>Notice</Link>
             </li>
             <li>
               <Link to='blogs'>Blogs</Link>
             </li>
             <li>
-              <Link to='notice'>notice</Link>
+              <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link to='/apply'>Apply </Link>
+              <Link to='/Login'>Log-In</Link>
             </li>
           </ul>
         </div>
