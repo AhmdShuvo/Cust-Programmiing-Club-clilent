@@ -14,7 +14,7 @@ const Blog = () => {
 
       
        
-      fetch("http://localhost:9000/blogs").then(res=>res.json()).then(data=>setBlogs(data))
+      fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res=>res.json()).then(data=>setBlogs(data))
    },[])
    return (
       <div>
@@ -33,13 +33,13 @@ const Blog = () => {
                <div className="flex flex-wrap justify-center -mx-4">
                   <div className="w-full px-4">
                      <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                        <span className="font-semibold text-lg  mb-2 block text-white">
+                        <span className="font-semibold text-lg  mb-2 block ">
                            Our Blogs
                         </span>
-                        <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] text-white mb-4">
+                        <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] mb-4">
                            Our Recent News
                         </h2>
-                        <p className="text-base text-white">
+                        <p className="text-base ">
                            There are many variations of passages of Lorem Ipsum available
                            but the majority have suffered alteration in some form.
                         </p>

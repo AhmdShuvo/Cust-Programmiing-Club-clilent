@@ -43,7 +43,7 @@ const formData=new FormData()
       //  }
       formData.append('blog', data)
 
-       fetch("http://localhost:9000/blogs", {
+       fetch("https://desolate-headland-20264.herokuapp.com/blogs", {
           method: 'POST',
           mode: 'no-cors',
           headers: {
@@ -56,6 +56,10 @@ const formData=new FormData()
         
       
     }
+    alert("Your Blog Posted Successfully")
+
+
+   setData('')
   }
 
    
