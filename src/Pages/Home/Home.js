@@ -7,10 +7,11 @@ import Gallary from '../PhotoGallary]/Gallary';
 const Home = () => {
     return (
     <>
-    {/* <Navigation></Navigation> */}
-    <h1>home</h1>
-     <Hero></Hero>
-    {/* <Footer></Footer> */}
+
+    <Hero></Hero>
+    <CommitteeMemmbers></CommitteeMemmbers>
+    <Gallary></Gallary>
+
     </>
     );
 };

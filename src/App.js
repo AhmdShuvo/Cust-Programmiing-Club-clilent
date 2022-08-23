@@ -1,6 +1,4 @@
 import './App.css';
-
-
 import Home from './Pages/Home/Home';
 
 import Footer from './Pages/Shared/Footer/Footer';
@@ -21,7 +19,7 @@ import AuthProvider from './context/AuthProvider/AuthProvider';
 
 function App() {
   return (
-  
+  <AuthProvider>
     <Router>
        <Navigation></Navigation>  
          <Routes>
@@ -34,7 +32,7 @@ function App() {
        <Footer></Footer>
   
     </Router>
-    
+    </AuthProvider>
        
     
   );

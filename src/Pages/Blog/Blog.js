@@ -1,4 +1,4 @@
-import { data } from 'jquery';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Blog.css"
