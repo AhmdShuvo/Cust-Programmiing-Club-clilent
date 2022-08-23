@@ -9,6 +9,10 @@ import { useState } from 'react';
 const Blog = () => {
    const [blogs,setBlogs]=useState([])
    useEffect(()=>{
+
+
+
+      
        
       fetch("http://localhost:9000/blogs").then(res=>res.json()).then(data=>setBlogs(data))
    },[])
