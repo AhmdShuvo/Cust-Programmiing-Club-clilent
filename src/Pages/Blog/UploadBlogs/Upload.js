@@ -57,6 +57,9 @@ const formData=new FormData()
       
     }
     alert("Your Blog Posted Successfully")
+
+
+   setData('')
   }
 
    
