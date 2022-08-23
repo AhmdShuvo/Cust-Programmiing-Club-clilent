@@ -9,6 +9,10 @@ import { useState } from 'react';
 const Blog = () => {
    const [blogs,setBlogs]=useState([])
    useEffect(()=>{
+
+
+
+      
        
       fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res=>res.json()).then(data=>setBlogs(data))
    },[])
