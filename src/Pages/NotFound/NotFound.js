@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NotFound.css'
 const NotFound = () => {
     return (
@@ -28,6 +29,9 @@ const NotFound = () => {
             <stop offset={0} style={{stopColor: '#425B6A'}} />
             <stop offset={1} style={{stopColor: '#30414A'}} />
           </linearGradient>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        <Link to="/home"> Go Back Home </Link>
+</button> 
           <polygon className="st3" points="1526.69995,246.79999 1510.80005,246.89999 1511.5,245 1565.09998,215.5 1582.40002,211 
 		1587.09998,202.5 1596.69995,199.29999 1604.30005,194.29999 1615.40002,200.5 1620,201.70001 1629.19995,200.39999 
 		1649.80005,185.29999 1674.30005,168.29999 1682.30005,169.39999 1701.30005,150 1708.80005,153.5 1712.5,147.89999 
@@ -1105,6 +1109,9 @@ const NotFound = () => {
             </g>
           </g>
         </g>
+        <linearGradient>
+       
+</linearGradient>
       </svg>
     
         </div>
