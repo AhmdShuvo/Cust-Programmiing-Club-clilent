@@ -1,13 +1,13 @@
- import React, { useEffect, useState } from 'react';
- import initializeFirebase from "../Pages/LogIn/Firebase/firebase.init.js"
- import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, updateProfile, getIdToken, signOut } from "firebase/auth";
+import React, { useEffect, useState } from 'react';
+import initializeFirebase from "../Pages/LogIn/Firebase/firebase.init.js"
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, updateProfile, getIdToken, signOut } from "firebase/auth";
 
 
 
 
 
- initializeFirebase()
- const useFirebase = () => {
+initializeFirebase()
+const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
@@ -19,9 +19,9 @@
 
 
 
-// register
+    // register
 
-    const registerUser = (email, password, name,history ) => {
+    const registerUser = (email, password, name, history) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -71,20 +71,20 @@
 
 
 
-        return signInWithEmailAndPassword(auth,email,password)
+        return signInWithEmailAndPassword(auth, email, password)
 
     }
 
 
 
 
-    
 
 
 
-     // Observe user state
 
-     useEffect(() => {
+    // Observe user state
+
+    useEffect(() => {
         const unsubcribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user)
@@ -140,16 +140,16 @@
         user,
         authError,
         isLoading,
-        
+
         registerUser,
-       
+
         loginUser,
         token,
         userType,
-        
+
         logOut
 
     }
- };
- 
- export default useFirebase;
+};
+
+export default useFirebase;

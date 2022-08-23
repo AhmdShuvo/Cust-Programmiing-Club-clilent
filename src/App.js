@@ -16,14 +16,14 @@ import About from './Pages/About/About';
 import Event from './Pages/Event/Event';
 
 import NotFound from './Pages/NotFound/NotFound';
-import Blog from './Pages/Blog/Blog';
-import Notice from './Pages/Notice/Notice';
+// import Blog from './Pages/Blog/Blog';
+// import Notice from './Pages/Notice/Notice';
 import Upload from './Pages/Blog/UploadBlogs/Upload';
 
 import Navigation from './Pages/Shared/Navbar/Navigation';
 
 import Register from './Pages/LogIn/Register/Register';
-import Login from './Pages/LogIn/LogIn/Login';
+// import Login from './Pages/LogIn/LogIn/Login';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 
 
@@ -41,6 +41,10 @@ function App() {
           <Route path="notice" element={<Notice />} />
 
           <Route path="about" element={<About />} />
+          <Route path="events" element={<Event />} />
+          <Route path="/blogs/upload" element={<Upload />} />
+          <Route path="Login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
           {/* <Route path="/notice/:noticeId" element={<NoticeModal />} /> */}
           {/* <Route path="texteditor" element={<TextEditor />} /> */}
           {/* <Route path="*" element={<NotFound />} /> */}
@@ -48,18 +52,15 @@ function App() {
 
         </Routes>
         <Footer></Footer>
-
-
-        <Route path="events" element={<Event />} />
-        <Route path="/blogs/upload" element={<Upload />} />
-        <Route path="Login" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
-
       </Router>
-      <Footer></Footer>
+
+
+
+
+
     </AuthProvider >
-       
-    
+
+
   );
 }
 

@@ -44,11 +44,9 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-<<<<<<< HEAD
                         <img src="./images/arif.jpg" alt="" />
-=======
-                        <img src="./images/50626.jpg" alt="" />
->>>>>>> db6a77e809896739f72775afc5ac056edd3c4ad9
+
+
                     </div>
                     <div className="content">
                         <h2>Ariful Islam <br />
