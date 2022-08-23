@@ -58,7 +58,7 @@ const Navigation = () => {
     </div>
   </div>
   <div className="navbar-center">
-    <a href="https://cust.edu.bd/" className="btn btn-ghost normal-case text-xl"> <img src='./images/main_logo_text.png'width={40} ></img>  </a><span className='m-2'>Cust Programming Club</span>
+    <a href="https://cust.edu.bd/" className="btn btn-ghost normal-case text-xl"> <img src='https://i.ibb.co/RQf78N9/291605210-454802836471911-4788002618510328382-n.png'width={40} ></img>  </a><span className='m-2'>Cust Programming Club</span>
   </div>
   
   {user.email &&
@@ -76,6 +76,8 @@ const Navigation = () => {
                                     :
                                     <Link to="/register"> <button className="signup-button ">Sign Up</button></Link>
                             }
+ 
+  
 </div>
 
     );
