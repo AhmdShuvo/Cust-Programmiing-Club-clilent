@@ -44,7 +44,7 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-                        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/271995115_3120809278178725_4184070734605111682_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGOSsxG_QiZtl-VBS042DvYPHl3ilpOpoA8eXeKWk6mgCfdHu-Pw1y2KJCpdadeDqvavoW5KE-1NVK49dOR4jcZ&_nc_ohc=-SnehzfpSjwAX9MmGqR&_nc_oc=AQkWpEJKmYf_Pdln790Sr9vPoqWQ5YKUUVg9unkHh7fhrykvOVWbsFgfhBc4iSHP8uo&_nc_ht=scontent.fdac7-1.fna&oh=00_AT9SX8bvRGSXDOxp3Iq02qCC0EGo9pGWUEGL-VdIApoOxQ&oe=62EC3E4C" alt="" />
+                        <img src="./images/50626.jpg" alt="" />
                     </div>
                     <div className="content">
                         <h2>Ariful Islam <br />
@@ -62,7 +62,7 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-                        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/279708463_2921770051447886_5439681024252892163_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG32s05n4sWtOswauRbY0-QePtatH7TzU14-1q0ftPNTZyI4UUEZMn4Ey6N9nwmlHpjr7Q4qTS5lQcPUB-uWZ_V&_nc_ohc=faa0kMjkhjYAX8SQ1wG&_nc_oc=AQnfC1WSYHjhdqDS3ew03ZdKmygABoG3Lsgrv2kW9NC4eST_C8ydOzBntnvmj7noJRI&tn=1Eiy8ybYxLtgfG3l&_nc_ht=scontent.fdac7-1.fna&oh=00_AT_n7zfYfLGN9NVEkGrZ6Cq6Oo57GX17wdr75aZM9UY_4w&oe=62EAB45E" alt="" />
+                        <img src="./images/nabid.jpg" alt="" />
                     </div>
                     <div className="content">
                         <h2>Nabid Hasan<br />

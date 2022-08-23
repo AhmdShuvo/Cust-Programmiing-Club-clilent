@@ -24,7 +24,13 @@ function App() {
        <Navigation></Navigation>  
          <Routes>
               
-              <Route index element={<Home />}/>
+         <Route index element={<Home />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="Register" element={<Register />} />
+        <Route path="blogs" element={<Blog />} />
+        <Route path="notice" element={<Notice />} />
+        <Route path="events" element={<Event />} />
+        <Route path="/blogs/upload" element={<Upload />} />
               <Route path="Login" element={<Login />}/> 
               <Route path="*" element={<NotFound />}/>
               

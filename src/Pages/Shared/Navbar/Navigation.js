@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Navigation.css'
 const Navigation = () => {
+
+  const {user}=useAuth()
+
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 sticky top-0 z-50 bg-transparent">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -49,7 +52,7 @@ const Navigation = () => {
     </div>
   </div>
   <div className="navbar-center">
-    <a href="https://cust.edu.bd/" className="btn btn-ghost normal-case text-xl"> <img src='./images/main_logo_text.png'width={40} ></img>  </a><span className='m-2'>Cust Programming Club</span>
+    <a href="https://cust.edu.bd/" className="btn btn-ghost normal-case text-xl"> <img src='./images/cpclogo.png'width={40} ></img>  </a><span className='m-2'>Cust Programming Club</span>
   </div>
   <div className="navbar-end">
     
