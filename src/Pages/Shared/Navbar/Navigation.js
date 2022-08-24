@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Navigation.css'
 const Navigation = () => {
+
+  const {user, approved}=useAuth()
+
+  console.log(approved);
     return (
         <div className="navbar bg-base-100">
   <div className="navbar-start">
