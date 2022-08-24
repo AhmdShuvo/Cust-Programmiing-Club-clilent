@@ -15,6 +15,8 @@ import Navigation from './Pages/Shared/Navbar/Navigation';
 import Register from './Pages/LogIn/Register/Register';
 import Login from './Pages/LogIn/LogIn/Login';
 import AuthProvider from './context/AuthProvider/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Wait from './Pages/WaitForApproval/Wait';
 
 
 function App() {
@@ -27,11 +29,21 @@ function App() {
          <Route index element={<Home />} />
         <Route path="Login" element={<Login />} />
         <Route path="Register" element={<Register />} />
-        <Route path="blogs" element={<Blog />} />
+        <Route
+            path='blogs'
+            element={
+              <PrivateRoute>
+                {' '}
+                <Blog/>
+              </PrivateRoute>
+            }
+          ></Route>
+        {/* <Route path="blogs" element={<Blog />} /> */}
         <Route path="notice" element={<Notice />} />
         <Route path="events" element={<Event />} />
         <Route path="/blogs/upload" element={<Upload />} />
               <Route path="Login" element={<Login />}/> 
+              <Route path="approval" element={<Wait />}/> 
               <Route path="*" element={<NotFound />}/>
               
         </Routes>

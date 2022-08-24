@@ -11,7 +11,7 @@
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
-    const [userType, setUserType] = useState('');
+    const [approved, setApproved] = useState('');
     const [token, setToken] = useState('');
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -56,6 +56,7 @@
 
     // User Login
     const loginUser = (email, password, location) => {
+     
         return signInWithEmailAndPassword(auth,email,password)
 
     }
@@ -101,13 +102,13 @@
     }
     console.log(user.email)
     useEffect(() => {
-        // fetch(`https://shielded-falls-80975.herokuapp.com/users/${user?.email}`)
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data)
-        //         setUserType(data)
-        //     })
-        //     .catch((e) => { })
+        fetch(`http://localhost:9000/user/approv/${user?.email}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setApproved(data)
+            })
+            .catch((e) => { })
     }, [user.email])
 
     // User Logout
@@ -130,7 +131,7 @@
        
         loginUser,
         token,
-        userType,
+        approved,
         
         logOut,
         saveUser
