@@ -7,7 +7,7 @@ const Register = () => {
   const [loginData, setLoginData] = useState({});
   
   const history = useNavigate()
-  const { registerUser, isLoading, user, authError } = useAuth()
+  const { registerUser, isLoading, user, authError,saveUser } = useAuth()
   const handleOnChange = e => {
       const field = e.target.name;
       const value = e.target.value;
@@ -25,6 +25,7 @@ const Register = () => {
         return;
     }
     registerUser(loginData.email, loginData.password, loginData.name, history);
+    saveUser(loginData.email,loginData.naame,"post")
 
 }
 console.log(loginData)

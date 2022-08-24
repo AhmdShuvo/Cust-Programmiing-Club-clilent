@@ -56,21 +56,6 @@
 
     // User Login
     const loginUser = (email, password, location) => {
-        // setIsLoading(true)
-        // signInWithEmailAndPassword(auth, email, password)
-        //     .then((userCredential) => {
-        //         // const redirect_uri = '/';
-        //         // history(redirect_uri);
-        //         setAuthError('');
-        //     })
-        //     .catch((error) => {
-
-        //         setAuthError(error.message)
-        //     })
-        //     .finally(() => setIsLoading(false));
-
-
-
         return signInWithEmailAndPassword(auth,email,password)
 
     }
@@ -105,7 +90,7 @@
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName }
-        fetch('https://shielded-falls-80975.herokuapp.com/users', {
+        fetch('http://localhost:9000/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -147,7 +132,8 @@
         token,
         userType,
         
-        logOut
+        logOut,
+        saveUser
 
     }
  };

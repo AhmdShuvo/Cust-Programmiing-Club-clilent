@@ -4,7 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 import './Navigation.css'
 const Navigation = () => {
 
-  const { user, logoutWithAlart } = useAuth()
+  const { user, logOut } = useAuth()
 
   return (
     <div className="navbar bg-base-100 sticky top-0 z-50 bg-transparent">
@@ -34,7 +34,7 @@ const Navigation = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-             {user.email?<Link to="/">  <button onClick={logoutWithAlart} className="signup-button ms-5">Log Out</button></Link>: <Link to='/Login'>LogIn</Link>}
+             {user.email?<Link to="/">  <button onClick={logOut} className="signup-button ms-5">Log Out</button></Link>: <Link to='/Login'>LogIn</Link>}
             </li>
             <li>
               <Link to='/Research'>Research</Link>
