@@ -17,6 +17,7 @@ import Login from './Pages/LogIn/LogIn/Login';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Wait from './Pages/WaitForApproval/Wait';
+import BlogDetail from './Pages/Blog/BlogDetails/BlogDetail';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
               
          <Route index element={<Home />} />
         <Route path="Login" element={<Login />} />
-        <Route path="Register" element={<Register />} />
+        {/* <Route path="Register" element={<Register />} />
         <Route
             path='blogs'
             element={
@@ -37,8 +38,9 @@ function App() {
                 <Blog/>
               </PrivateRoute>
             }
-          ></Route>
-        {/* <Route path="blogs" element={<Blog />} /> */}
+          ></Route> */}
+        <Route path="blogs" element={<Blog />} />
+        <Route path="blogs/blog/:id" element={<BlogDetail />} />
         <Route path="notice" element={<Notice />} />
         <Route path="events" element={<Event />} />
         <Route path="/blogs/upload" element={<Upload />} />

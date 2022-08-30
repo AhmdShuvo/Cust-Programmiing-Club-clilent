@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react';
 import ReactQuill from "react-quill"
 import 'react-quill/dist/quill.snow.css'
 import { useQuill } from 'react-quilljs';
+import useAuth from '../../../hooks/useAuth';
 import RedAlert from '../../Shared/RedAlert/RedAlert';
 const Upload = () => {
+
+  const {user}=useAuth()
   const [data,setData]=useState(null)
+  const [heading,setheading]=useState('')
 const [error,setError]=useState()
     const { quill, quillRef } = useQuill();
 //    const parser=str=>{
@@ -26,6 +30,13 @@ const [error,setError]=useState()
         }
       }, [quill]);
 
+
+
+     const handlechange=e=>{
+      setheading(e.target.value);
+      console.log(e.target.value);
+
+      }
     //   parser(data)
     const handleSubmit=e=>{
       e.preventDefault()
@@ -42,6 +53,8 @@ const formData=new FormData()
       //   data
       //  }
       formData.append('blog', data)
+    formData.append("heading" ,heading);
+    formData.append("username",user.displayName);
 
        fetch("https://desolate-headland-20264.herokuapp.com/blogs", {
           method: 'POST',
@@ -62,15 +75,14 @@ const formData=new FormData()
    setData('')
   }
 
-   
   
     return (
-        <div className='container'>
+        <div className='container bg-zinc-800  p-5 shadow-2xl'>
+          
   <form onSubmit={handleSubmit} action="">
 
-    <div>
-      <label htmlFor="name">Name</label>
-      <input type="text" />
+    <div >
+      <input style={{width:"40%",margin:"20px",textAlign:"center",backgroundColor:'inherit',border:'1px solid white',padding:"3px"}} placeholder='heading' onChange={handlechange}  name='blogtitle'  type="text" />
     </div>
   {error&& <RedAlert
   message={error}

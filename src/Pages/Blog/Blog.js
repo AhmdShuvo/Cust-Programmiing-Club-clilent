@@ -5,9 +5,14 @@ import "./Blog.css"
 import SingleBlog from './SingleBlog';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import useAuth from '../../hooks/useAuth';
 
 const Blog = () => {
    const [blogs,setBlogs]=useState([])
+   const{approved}=useAuth()
+
+   // console.log(approved);
+   console.log(blogs.heading);
    useEffect(()=>{
 
 
@@ -16,6 +21,8 @@ const Blog = () => {
        
       fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res=>res.json()).then(data=>setBlogs(data))
    },[])
+
+   
    return (
       <div>
 
@@ -60,6 +67,9 @@ const Blog = () => {
             </div>
          </section>
          {/* <!-- ====== Blog Section End --> */}
+         <div class="flex flex-wrap justify-center mx-4">
+    
+         </div>
 
       </div>
    );
