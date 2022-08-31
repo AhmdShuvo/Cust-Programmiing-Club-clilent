@@ -29,7 +29,7 @@ function App() {
               
          <Route index element={<Home />} />
         <Route path="Login" element={<Login />} />
-        {/* <Route path="Register" element={<Register />} />
+        <Route path="Register" element={<Register />} />
         <Route
             path='blogs'
             element={
@@ -38,7 +38,7 @@ function App() {
                 <Blog/>
               </PrivateRoute>
             }
-          ></Route> */}
+          ></Route>
         <Route path="blogs" element={<Blog />} />
         <Route path="blogs/blog/:id" element={<BlogDetail />} />
         <Route path="notice" element={<Notice />} />

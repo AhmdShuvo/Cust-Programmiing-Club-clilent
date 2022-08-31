@@ -102,11 +102,11 @@
     }
     console.log(user.email)
     useEffect(() => {
-        fetch(`http://localhost:9000/user/approv/${user?.email}`)
+        fetch(`http://localhost:9000/user/approv/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                setApproved(data)
+                setApproved(data.approved)
             })
             .catch((e) => { })
     }, [user.email])
@@ -128,6 +128,7 @@
         isLoading,
         
         registerUser,
+        setIsLoading,
        
         loginUser,
         token,
