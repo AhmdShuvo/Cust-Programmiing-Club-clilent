@@ -11,13 +11,15 @@ const PrivateRoute = ({ children }) => {
     const location = useLocation();
 
      
-    if (isLoading) {
+    if (isLoading ) {
       
         console.log(approved);
         return (
            'loading'
         );
     }
+
+    if(!approved){return "not approved"}
     if(!user.email){
 
         return <Navigate to={'/Login'} state={{ from: location }}></Navigate>

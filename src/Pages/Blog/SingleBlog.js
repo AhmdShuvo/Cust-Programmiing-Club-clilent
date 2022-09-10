@@ -11,11 +11,7 @@ const {blog}=blogs;
                     <div className="w-full md:w-1/2 lg:w-1/3 px-4">
                <div className="max-w-[370px] mx-auto mb-10">
                   <div className="rounded overflow-hidden mb-8">
-                     <img
-                        src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-01.jpg"
-                        alt="imageg"
-                        className="w-full"
-                     />
+                  
                   </div>
                   <div>
                      <div className="flex items-center justify-between mb-5">
@@ -26,9 +22,9 @@ const {blog}=blogs;
                                  alt="Avatar"
                               />
                               <div className="flex flex-col mx-2 ">
-                                 <a href="2" className="font-semibold  hover:underline text-white">
+                                 <p  className="font-semibold  hover:underline text-white">
                                     {blogs.username}
-                                 </a>
+                                 </p>
                                  <span className="mx-1 text-xs text-white">28 Sep 2020</span>
                               </div>
                            </div>

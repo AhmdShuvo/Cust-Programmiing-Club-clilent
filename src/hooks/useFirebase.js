@@ -14,7 +14,6 @@
     const [approved, setApproved] = useState('');
     const [token, setToken] = useState('');
     const auth = getAuth();
-    const googleProvider = new GoogleAuthProvider();
     const [admin,setIsAdmin]=useState(false)
 
 
