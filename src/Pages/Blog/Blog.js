@@ -67,7 +67,7 @@ const Blog = () => {
             </div>
          </section>
          {/* <!-- ====== Blog Section End --> */}
-         <div class="flex flex-wrap justify-center mx-4">
+         <div className="flex flex-wrap justify-center mx-4">
     
          </div>
 

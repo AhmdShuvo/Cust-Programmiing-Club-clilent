@@ -22,39 +22,39 @@ import BlogDetail from './Pages/Blog/BlogDetails/BlogDetail';
 
 function App() {
   return (
-  <AuthProvider>
-    <Router>
-       <Navigation></Navigation>  
-         <Routes>
-              
-         <Route index element={<Home />} />
-        <Route path="Login" element={<Login />} />
-        <Route path="Register" element={<Register />} />
-        <Route
+    <AuthProvider>
+      <Router>
+        <Navigation></Navigation>
+        <Routes>
+
+          <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route
             path='blogs'
             element={
               <PrivateRoute>
                 {' '}
-                <Blog/>
+                <Blog />
               </PrivateRoute>
             }
           ></Route>
-        <Route path="blogs" element={<Blog />} />
-        <Route path="blogs/blog/:id" element={<BlogDetail />} />
-        <Route path="notice" element={<Notice />} />
-        <Route path="events" element={<Event />} />
-        <Route path="/blogs/upload" element={<Upload />} />
-              <Route path="Login" element={<Login />}/> 
-              <Route path="approval" element={<Wait />}/> 
-              <Route path="*" element={<NotFound />}/>
-              
+          <Route path="blogs" element={<Blog />} />
+          <Route path="blogs/blog/:id" element={<BlogDetail />} />
+          <Route path="notice" element={<Notice />} />
+          <Route path="events" element={<Event />} />
+          <Route path="/blogs/upload" element={<Upload />} />
+          <Route path="login" element={<Login />} />
+          <Route path="approval" element={<Wait />} />
+          <Route path="*" element={<NotFound />} />
+
         </Routes>
-       <Footer></Footer>
-  
-    </Router>
+        <Footer></Footer>
+
+      </Router>
     </AuthProvider>
-       
-    
+
+
   );
 }
 

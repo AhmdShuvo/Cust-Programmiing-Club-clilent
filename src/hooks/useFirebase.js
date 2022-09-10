@@ -15,6 +15,7 @@
     const [token, setToken] = useState('');
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
+    const [admin,setIsAdmin]=useState(false)
 
 
 
@@ -62,12 +63,6 @@
     }
 
 
-
-
-    
-
-
-
      // Observe user state
 
      useEffect(() => {
@@ -89,18 +84,22 @@
     }, [auth])
 
 
-    const saveUser = (email, displayName, method) => {
-        const user = { email, displayName }
-        fetch('http://localhost:9000/users', {
-            method: method,
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(user)
+    const saveUsertoDb=(email,displayName,password)=>{
+
+        const user={email,displayName,password};
+      
+        fetch('https://desolate-headland-20264.herokuapp.com/users',{
+          method:'POST',
+          headers:{ "content-type": 'application/json'},
+                 body:JSON.stringify(user)
+      
         })
+      
             .then()
     }
-    console.log(user.email)
+  
+
+    // CHECK FOR APPROVAL //
     useEffect(() => {
         fetch(`http://localhost:9000/user/approv/${user.email}`)
             .then(res => res.json())
@@ -110,6 +109,13 @@
             })
             .catch((e) => { })
     }, [user.email])
+
+//  CHECK FOR ADMIN ACCCES ////
+    useEffect(()=>{
+
+        fetch(`http://localhost:9000/user/admin/${user.email}`).then(res=>res.json()).then(data=>setIsAdmin(data.admin))
+      
+      },[user.email])
 
     // User Logout
     const logOut = () => {
@@ -135,7 +141,7 @@
         approved,
         
         logOut,
-        saveUser
+        saveUsertoDb
 
     }
  };

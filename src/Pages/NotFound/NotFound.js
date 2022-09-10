@@ -35,7 +35,7 @@ const NotFound = () => {
             <stop offset={0} style={{stopColor: '#425B6A'}} />
             <stop offset={1} style={{stopColor: '#30414A'}} />
           </linearGradient>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
         <Link to="/home"> Go Back Home </Link>
 </button> 
           <polygon className="st3" points="1526.69995,246.79999 1510.80005,246.89999 1511.5,245 1565.09998,215.5 1582.40002,211 

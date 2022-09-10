@@ -9,8 +9,11 @@ import useAuth from '../../hooks/useAuth';
 const PrivateRoute = ({ children }) => {
     const { user, isLoading,approved } = useAuth();
     const location = useLocation();
-    console.log(approved);
-    if (isLoading || !approved ) {
+
+     
+    if (isLoading) {
+      
+        console.log(approved);
         return (
            'loading'
         );
@@ -19,10 +22,13 @@ const PrivateRoute = ({ children }) => {
 
         return <Navigate to={'/Login'} state={{ from: location }}></Navigate>
     }
-
-   if (!approved ){
-        return <Navigate to='/approval' state={{ from: location }} />;
-    }
+    
+        if (!approved ){
+ 
+            return <Navigate to='/approval' state={{ from: location }} />;
+        }
+ 
+   
     
     return children;
 };
