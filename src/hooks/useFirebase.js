@@ -100,7 +100,7 @@
 
     // CHECK FOR APPROVAL //
     useEffect(() => {
-        fetch(`http://localhost:9000/user/approv/${user.email}`)
+        fetch(`https://desolate-headland-20264.herokuapp.com/user/approv/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -112,7 +112,7 @@
 //  CHECK FOR ADMIN ACCCES ////
     useEffect(()=>{
 
-        fetch(`http://localhost:9000/user/admin/${user.email}`).then(res=>res.json()).then(data=>setIsAdmin(data.admin))
+        fetch(`https://desolate-headland-20264.herokuapp.com/user/admin/${user.email}`).then(res=>res.json()).then(data=>setIsAdmin(data.admin))
       
       },[user.email])
 

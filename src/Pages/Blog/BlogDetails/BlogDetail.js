@@ -9,7 +9,7 @@ const BlogDetail = () => {
 
     useEffect(()=>{
 
-        fetch(`http://localhost:9000/blog/${id}`).then(res=>res.json()).then(data=>setBlogs(data))
+        fetch(`https://desolate-headland-20264.herokuapp.com/blog/${id}`).then(res=>res.json()).then(data=>setBlogs(data))
      },[])
  
     return (
