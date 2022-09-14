@@ -55,6 +55,7 @@ const formData=new FormData()
       formData.append('blog', data)
     formData.append("heading" ,heading);
     formData.append("username",user.displayName);
+    formData.append("email",user.email);
 
        fetch("https://desolate-headland-20264.herokuapp.com/blogs", {
           method: 'POST',

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SingleBlog = ({blogs}) => {
 const {blog}=blogs;
-   console.log(blogs._id);
+   console.log(blogs);
     return (
        
                     
@@ -25,7 +25,7 @@ const {blog}=blogs;
                                  <p  className="font-semibold  hover:underline text-white">
                                     {blogs.username}
                                  </p>
-                                 <span className="mx-1 text-xs text-white">28 Sep 2020</span>
+                                 <span className="mx-1 text-xs text-white">{blogs.email}</span>
                               </div>
                            </div>
                         </div>
@@ -48,28 +48,6 @@ const {blog}=blogs;
                           {blogs.heading}
                         </Link >
                      </h3>
-                     {/* <p className="text-base text-body-color text-white">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                     </p>
-                     <span
-                        className="
-                     bg-primary
-                     rounded
-                     inline-block
-                     text-center
-                     py-1
-                     px-4
-                     text-xs
-                     leading-loose
-                     font-semibold
-                     text-white
-                     mt-5
-                     "
-                     style={{"background":"#193d52"}}
-                     >
-                        Read more...
-                     </span> */}
                   </div>
                </div>
            
