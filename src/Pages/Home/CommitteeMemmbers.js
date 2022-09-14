@@ -14,10 +14,7 @@ const CommitteeMemmbers = () => {
                         <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] mb-4">
                             Our Committee Members 2022-23
                         </h2>
-                        <p className="text-base ">
-                            There are many variations of passages of Lorem Ipsum available
-                            but the majority have suffered alteration in some form.
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -32,7 +29,7 @@ const CommitteeMemmbers = () => {
                             <span>ADVISOR</span></h2>
                     </div>
                 </div>
-             
+
                 <div className="box">
                     <div className="imgBox">
                         <img src="./images/Banjir-ah.jpeg" alt="" />
