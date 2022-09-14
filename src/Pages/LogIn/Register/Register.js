@@ -53,7 +53,7 @@ const Register = () => {
                   <input name='name' type="text" placeholder="   Full Name" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
                 </div>
                 <div className="mt-7">
-                  <input name='email' pattern='[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+.(edu)+.(bd)' type="email" placeholder="  Email" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
+                  <input name='email'  pattern='[A-Z0-9a-z._%+-]+@+(cust)+.(edu)+.(bd)' type="email" placeholder="  Email" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
                 </div>
                 <div className="mt-7">
                   <input name='password' type="password" placeholder="  Password" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
