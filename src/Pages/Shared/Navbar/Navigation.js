@@ -19,9 +19,11 @@ const Navigation = () => {
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li> <Link to="/">Home</Link></li>
             <li> <Link to='/research'>Research</Link></li>
+            <li> <Link to='/notice'>Notice</Link></li>
             <li> <Link to='/about'>About</Link></li>
+           {!user.email &&  <li> <Link to='/login'>Login</Link></li>}
             <li><Link to='/blogs'>Blogs</Link> </li>
-            <li>{user.email ? <Link to="/">  <button onClick={logOut} className="signup-button ms-5">Log Out</button></Link> : <Link to='/register'>Apply </Link>}</li>
+            <li>{user.email ? <Link to="/">  <button onClick={logOut} className="signup-button ms-5">Log Out</button></Link> : <Link to='/register'>Sign Up </Link>}</li>
           </ul>
         </div>
       </div>

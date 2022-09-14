@@ -19,7 +19,7 @@ const Blog = () => {
 
       
        
-      fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res=>res.json()).then(data=>setBlogs(data))
+      fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res=>res.json()).then(data=>setBlogs(data.reverse()))
    },[])
 
    
