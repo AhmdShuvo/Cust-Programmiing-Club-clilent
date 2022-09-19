@@ -17,7 +17,7 @@ const Gallary = () => {
           </div>
         </div>
       </div>
-      <div className="grid image-grid justify-center">
+      <div className="grid image-grid justify-center px-[30px]">
         <div className="grid-block">
           <div className="tile">
             <a className="tile-link" href="/">

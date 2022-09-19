@@ -33,7 +33,10 @@ const Navigation = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a href='/' className="btn btn-ghost normal-case text-xl"><img src="./images/291605210_454802836471911_4788002618510328382_n.png" alt="" width='50px' /></a>
+        <a href='/' className="btn btn-ghost normal-case text-xl">
+          <img src="./images/291605210_454802836471911_4788002618510328382_n.png" alt="" width='50px' />
+          <h1 className="ml-3"> CUST PROGRAMMING CLUB</h1>
+        </a>
       </div>
       <div className="navbar-end">
 

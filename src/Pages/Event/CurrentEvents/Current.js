@@ -13,7 +13,19 @@ const Current = () => {
     return (
         <>
          <section id="current-events" className='my-5'>
-           <center> <h1 className='text-7xl my-5'>Events Currently Running</h1></center>
+         <div className="flex flex-wrap justify-center mx-4 mt-32">
+                <div className="w-full px-4">
+                    <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+                        <span className="font-semibold text-lg  mb-2 block ">
+                            EVENTS
+                        </span>
+                        <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] mb-4">
+                            Our Current Events
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
 
            {
             events.map(event=><CurrentSingle
