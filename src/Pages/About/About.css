@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.card-container {
+.card-container { 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,7 +21,7 @@
   transition: 0.5s;
 }
 
-.card .card-image {
+.card-container .card-image {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -32,7 +32,7 @@
   transition: 0.5s;
 }
 
-.card:hover img {
+.card-container :hover img {
   opacity: 0.4;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -43,7 +43,7 @@
   height: 380px;
 }
 
-.card:hover .card-image {
+.card-container:hover .card-image {
   -webkit-transform: translateY(-80px);
   transform: translateY(-80px);
   -webkit-transition: all 0.9s;
@@ -85,7 +85,7 @@
   opacity: 0;
 }
 
-.card:hover .social-icons li a {
+.card-container:hover .social-icons li a {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
   opacity: 1;
@@ -110,22 +110,22 @@
   transform: rotateY(360deg);
 }
 
-.card:hover li:nth-child(1) a {
+.card-container:hover li:nth-child(1) a {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
-.card:hover li:nth-child(2) a {
+.card-container:hover li:nth-child(2) a {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
-.card:hover li:nth-child(3) a {
+.card-container:hover li:nth-child(3) a {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
 
-.card:hover li:nth-child(4) a {
+.card-container:hover li:nth-child(4) a {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }

@@ -7,7 +7,7 @@ const Current = () => {
 
     const [events,setEvents]=useState([])
     useEffect(()=>{
-            fetch('https://desolate-headland-20264.herokuapp.com/currentevents').then(res=>res.json()).then(data=>setEvents(data))
+            fetch('https://desolate-headland-20264.herokuapp.com/currentevents').then(res=>res.json()).then(data=>setEvents(data.reverse()))
     },[])
    
     return (
