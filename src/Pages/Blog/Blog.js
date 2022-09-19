@@ -5,7 +5,7 @@ import "./Blog.css"
 import SingleBlog from './SingleBlog';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import useAuth from '../../hooks/useAuth';
+// import useAuth from '../../hooks/useAuth';
 
 const Blog = () => {
 

@@ -23,7 +23,7 @@ import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Wait from './Pages/WaitForApproval/Wait';
 import BlogDetail from './Pages/Blog/BlogDetails/BlogDetail';
-import Research from './Pages/Research/Research';
+// import Research from './Pages/Research/Research';
 import NoticeModal from './Pages/Notice/NoticeModal';
 
 

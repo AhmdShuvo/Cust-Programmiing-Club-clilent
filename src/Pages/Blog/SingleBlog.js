@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const SingleBlog = ({ blogs }) => {
-   const { blog } = blogs;
+   // const { blog } = blogs;
    console.log(blogs);
    return (
 

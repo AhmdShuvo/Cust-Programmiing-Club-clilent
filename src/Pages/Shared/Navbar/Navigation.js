@@ -38,7 +38,7 @@ const Navigation = () => {
           <h1 className="ml-3"> CUST PROGRAMMING CLUB</h1>
         </a>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end xs:mr-[10px] md:mr-[60px] lg:mr-[68px]">
 
         {user.email && <button className="btn btn-ghost btn-circle dropdown">
           <div className="indicator">
@@ -47,7 +47,7 @@ const Navigation = () => {
 
               <div className="bg-neutral-focus text-neutral-content rounded-full w-12 ">
                 {/* user Avater /Photo url  */}
-                <span> <img src={user.photoURL} alt="user-photo" /></span>
+                <span> <img src={user.photoURL} alt="user-phot" /></span>
                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-8">
                   <li><p>{user.displayName}</p></li>
 
