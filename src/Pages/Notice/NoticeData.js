@@ -4,13 +4,7 @@ import NoticeModal from './NoticeModal';
 
 const NoticeData = ({ n }) => {
     const { Subject, noticeBody, date, _id } = n
-    // const navigate = useNavigate();
-    // const showNoticeBody = () =>{
-    //     const path = `/notice/${_id}`;
-    //     navigate(path)
 
-    // }
-    const {notice} = useParams()
     return (
         <div>
             <div className="h-full">
@@ -42,31 +36,17 @@ const NoticeData = ({ n }) => {
                                     <div className="max-w-md text-indigo-100">
                                         <p className="mb-2">{noticeBody}...</p>
                                     </div>
-                                    {/* <!-- More link --> */}
-                                    {/* <Link to={"/notice/"+_id} className="flex-shrink-0 flex items-center justify-center text-indigo-600 h-10 ">
-                                        <label for="my-modal-3" className="modal-button block font-bold text-white text-xs hover:text-white	cursor-pointer hover:uppercase" onClick={showNoticeBody}>Read more</label>
-                                        
-                                    </Link> */}
+
                                     <a className="flex-shrink-0 flex items-center justify-center text-indigo-600 h-10 " href='g'>
-                                        <label for="my-modal-3" className="modal-button block font-bold text-white text-xs hover:text-white	cursor-pointer hover:uppercase" >Read more</label>
-                                        
+                                        <label HtmlFor="my-modal-3" className="modal-button block font-bold text-white text-xs hover:text-white	cursor-pointer hover:uppercase" >Read more</label>
+
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-{/*  */}
-            </div>
-
-            {/* <NoticeModal className="text-white"></NoticeModal> */}
-            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-            <div class="modal">
-                <div class="modal-box relative">
-                    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 class="text-lg font-bold">Congratulations random Internet user!{notice}</h3>
-                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellat hic commodi, et quaerat officiis maiores autem repudiandae sit laboriosam ratione voluptas excepturi repellendus reprehenderit qui! Impedit facere praesentium perspiciatis labore nostrum dolor ducimus? Inventore hic iste similique eveniet nemo magni unde sunt, veritatis esse maxime impedit quis, numquam quo.</p>
-                </div>
+                {/*  */}
             </div>
 
 

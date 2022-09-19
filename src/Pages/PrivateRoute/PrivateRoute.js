@@ -16,7 +16,8 @@ const PrivateRoute = ({ children }) => {
       
         console.log(approved);
         return (
-           'loading'
+            <center> <h1 style={{margin:'50px',fontSize:'72px'}}>Loading ....</h1>
+            </center>
         );
     }
 

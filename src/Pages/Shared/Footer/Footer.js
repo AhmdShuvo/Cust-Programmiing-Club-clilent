@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <p> &copy;  Central University of Science And Technology  </p>
         <div className="md:place-self-center md:justify-self-end">
-         
+
 
           <p>
             ACME Industries Ltd. <br />

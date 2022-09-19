@@ -25,7 +25,7 @@ const Register = () => {
       return;
     }
     registerUser(loginData.email, loginData.password, loginData.name, history);
-    saveUsertoDb(loginData.email, loginData.name,loginData.password)
+    saveUsertoDb(loginData.email, loginData.name, loginData.password)
 
   }
   console.log(loginData)
@@ -54,7 +54,7 @@ const Register = () => {
                 </div>
                 <div className="mt-7">
                   <label className='text-red-600' htmlFor="email"><small>Please Use Your Education email Address </small></label>
-                  <input name='email' type="email"  pattern='[A-Z0-9a-z._%+-]+@+(cust)+.(edu)+.(bd)' placeholder="  Email" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
+                  <input name='email' type="email" pattern='[A-Z0-9a-z._%+-]+@+(cust)+.(edu)+.(bd)' placeholder="  Email" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
                 </div>
                 <div className="mt-7">
                   <input name='password' type="password" placeholder="  Password" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />

@@ -4,12 +4,12 @@ import useAuth from '../../hooks/useAuth';
 
 const Wait = () => {
 
-    const{approved}=useAuth()
+    const { approved } = useAuth()
     console.log(approved);
 
     return (
         <div>
-             <h1>Your request is in progress </h1>
+            <h1>Your request is in progress </h1>
         </div>
     );
 };

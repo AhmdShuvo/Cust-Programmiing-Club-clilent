@@ -5,14 +5,18 @@ import NoticeData from './NoticeData';
 // import NoticeModal from './NoticeModal';
 
 const Notice = () => {
+
+    // states //
+
     const [notices, setNotices] = useState([])
+
+    // load notices from database ///
+
     useEffect(() => {
         fetch("https://desolate-headland-20264.herokuapp.com/notice?fbclid=IwAR0k2suNoR36ZE3k1U741J26njG_VLIIIPH6ob4T6Q4bASfVoykDmxDuo0s")
             .then(res => res.json())
             .then(data => setNotices(data))
     }, [])
-    // console.log(notices[1].noticeBody);
-
     return (
         <div>
             <section className="flex flex-col justify-center antialiased  text-gray-600 p-4">
@@ -28,18 +32,22 @@ const Notice = () => {
                         </div>
                     </div>
                 </div>
-                
+
             </section>
-            
+
             <section className="flex flex-col justify-center antialiased  text-gray-600 p-4">
+
+                {/* For each notice in notices shows a single notice / */}
                 {
-                    notices.map(n =><>
-                         <NoticeData n={n}></NoticeData></>
+                    notices.map(n => <>
+                        <NoticeData
+                            key={n._id}
+                            n={n}></NoticeData></>
 
                     )
                 }
             </section>
-       
+
 
 
         </div >

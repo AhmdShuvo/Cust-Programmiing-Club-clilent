@@ -11,19 +11,19 @@ import Gallary from '../PhotoGallary]/Gallary';
 
 const Home = () => {
     return (
-    <>
+        <>
 
-    <Hero></Hero>
-    <CommitteeMemmbers></CommitteeMemmbers>
+            <Hero></Hero>
+            <CommitteeMemmbers></CommitteeMemmbers>
 
-    {/* <TextEditor></TextEditor> */}
-    
-   
-    
+            {/* <TextEditor></TextEditor> */}
 
-    <Gallary></Gallary>
 
-    </>
+
+
+            <Gallary></Gallary>
+
+        </>
     );
 };
 

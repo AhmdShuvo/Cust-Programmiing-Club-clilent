@@ -28,6 +28,7 @@ import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Wait from './Pages/WaitForApproval/Wait';
 import BlogDetail from './Pages/Blog/BlogDetails/BlogDetail';
+import Research from './Pages/Research/Research';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
           ></Route>
           <Route path="blogs" element={<Blog />} />
           <Route path="about" element={<About />} />
+          <Route path="research" element={<Research />} />
           <Route path="blogs/blog/:id" element={<BlogDetail />} />
           <Route path="notice" element={<Notice />} />
           <Route path="events" element={<Event />} />

@@ -8,35 +8,22 @@ import { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 
 const Blog = () => {
-   const [blogs,setBlogs]=useState([])
-   const{approved}=useAuth()
 
-   // console.log(approved);
-   console.log(blogs.heading);
-   useEffect(()=>{
+   // states //
+   const [blogs, setBlogs] = useState([])
+
+   // Load Blogs data from Database ///
+
+   useEffect(() => {
+      fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res => res.json()).then(data => setBlogs(data.reverse()))
+   }, [])
 
 
-
-      
-       
-      fetch("https://desolate-headland-20264.herokuapp.com/blogs").then(res=>res.json()).then(data=>setBlogs(data.reverse()))
-   },[])
-
-   
    return (
       <div>
 
 
-         {/* <Link to= "/texteditor">
-               <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
-                  <i className="fa-solid fa-plus"></i>
-               </button>
-            </Link>
 
-           <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog' /> */}
-
-
-         {/* <h1 className='text-center text-4xl'>BLOGS</h1> */}
          <div className='sticky top-0 '>
             <Link to="/blogs/upload">  <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
                <i className="fa-solid fa-plus"></i>
@@ -53,16 +40,14 @@ const Blog = () => {
                            Our Blogs
                         </span>
                         <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] mb-4">
-                           Our Recent News
+                           Our Recent Blogs
                         </h2>
-                        <p className="text-base ">
-                           There are many variations of passages of Lorem Ipsum available
-                           but the majority have suffered alteration in some form.
-                        </p>
                      </div>
                   </div>
                </div>
                <div className="flex flex-wrap -mx-4">
+
+                  {/* For each blogs shows a single blog / */}
 
                   {
                      blogs.map(Blog => <SingleBlog
@@ -77,7 +62,7 @@ const Blog = () => {
          </section>
          {/* <!-- ====== Blog Section End --> */}
          <div className="flex flex-wrap justify-center mx-4">
-    
+
          </div>
 
       </div>
