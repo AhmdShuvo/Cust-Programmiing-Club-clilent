@@ -5,10 +5,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
-	flex-direction: row-reverse;
+	/* flex-direction: row-reverse;
 	background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #2c3e50, #bdc3c7); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 	flex-wrap: wrap;
@@ -29,6 +29,9 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
 .image-grid .tile-link:hover .tile-img {
 	top: -1rem;
 	left: -1rem;
+}
+.tile-link .tile-img1{
+	height: 279px;
 }
 
 .image-grid .tile-img {

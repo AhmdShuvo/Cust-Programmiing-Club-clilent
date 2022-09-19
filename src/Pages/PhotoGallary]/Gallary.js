@@ -4,8 +4,20 @@ import './gallary.css'
 const Gallary = () => {
   return (
     <section className=' mt-8 '>
-      <center><h1 className='text-7xl my-7'>Gallary </h1></center>
-      <div className="grid image-grid">
+      <div className="flex flex-wrap justify-center mx-4 mt-32">
+        <div className="w-full px-4">
+          <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+            <span className="font-semibold text-lg  mb-2 block ">
+              GALLARY
+            </span>
+            <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] mb-4">
+              Our Clubs Photoshoot
+            </h2>
+
+          </div>
+        </div>
+      </div>
+      <div className="grid image-grid justify-center">
         <div className="grid-block">
           <div className="tile">
             <a className="tile-link" href="/">

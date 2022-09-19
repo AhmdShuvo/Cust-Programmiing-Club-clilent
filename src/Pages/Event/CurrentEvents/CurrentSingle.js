@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CurrentSingle = ({event}) => {
-    const {time,title,description,image,_id    }=event
+    const {time,title,description,image  }=event
     return (
         <div>
             <div className="card w-100 lg:card-side bg-base-100 shadow-xl m-3 border-2">
