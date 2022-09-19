@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
+// import useAuth from '../../../hooks/useAuth';
 import './Navigation.css'
 const Navigation = () => {
 
@@ -52,7 +52,7 @@ const Navigation = () => {
   //   <div className="navbar-end">
 
 
-  const { user } = useAuth()
+  // const { user } = useAuth()
 
   return (
     <div className="navbar bg-base-100 sticky top-0 z-50 bg-transparent">
@@ -83,6 +83,9 @@ const Navigation = () => {
             </li>
             <li>
               <Link to='notice'>Notice</Link>
+            </li>
+            <li>
+              <Link to='events'>Events</Link>
             </li>
             <li>
               <Link to='blogs'>Blogs</Link>

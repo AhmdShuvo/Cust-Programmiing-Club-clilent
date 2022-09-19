@@ -40,7 +40,7 @@ const NoticeData = ({ n }) => {
                                 <div className="flex items-end justify-between whitespace-normal">
                                     {/* <!-- Paragraph --> */}
                                     <div className="max-w-md text-indigo-100">
-                                        <p className="mb-2">{noticeBody.slice(0, 50)}...</p>
+                                        <p className="mb-2">{noticeBody}...</p>
                                     </div>
                                     {/* <!-- More link --> */}
                                     {/* <Link to={"/notice/"+_id} className="flex-shrink-0 flex items-center justify-center text-indigo-600 h-10 ">
@@ -56,7 +56,7 @@ const NoticeData = ({ n }) => {
                         </div>
                     </div>
                 </div>
-
+{/*  */}
             </div>
 
             {/* <NoticeModal className="text-white"></NoticeModal> */}
