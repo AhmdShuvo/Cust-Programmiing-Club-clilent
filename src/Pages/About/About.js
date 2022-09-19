@@ -8,13 +8,16 @@ const About = () => {
             {/* DEVELOPER 1 //
             
              */}
-            <div className="flex flex-wrap justify-center mt-[30px] mb-[15px]">
+            <div className="flex flex-wrap justify-center mx-4 mt-5">
                 <div className="w-full px-4">
-                    <div className="text-center mx-auto  max-w-[510px]">
-
-                        <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] text-white mb-4">
-                            Developers Team
+                    <div className="text-center mx-auto mb-[20px] lg:mb-2 max-w-[510px]">
+                        <span className="font-semibold text-lg  mb-2 block ">
+                            DEVELOPERS
+                        </span>
+                        <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] mb-2">
+                            Our Developers
                         </h2>
+
                     </div>
                 </div>
             </div>
@@ -54,10 +57,10 @@ const About = () => {
                             </li>
                         </ul>
 
-                        <div class="details">
-                            <h2>MD. ARIFUL ISLAM
+                        <div class="details font-bold">
+                            <h2 >MD. ARIFUL ISLAM
                                 <br />
-                                <span class="job-title">MERN-STACK DEVELOPER</span>
+                                <span class="job-title"><p className='font-semibold'>MERN-STACK DEVELOPER</p></span>
                             </h2>
                         </div>
                     </div>
@@ -97,10 +100,10 @@ const About = () => {
                             </li>
                         </ul>
 
-                        <div class="details">
+                        <div class="details font-bold">
                             <h2>TANJIR AHMED SHUVO
                                 <br />
-                                <span class="job-title">MERN-STACK DEVELOPER</span>
+                                <span class="job-title"><p className='font-semibold'>MERN-STACK DEVELOPER</p></span>
                             </h2>
                         </div>
                     </div>
@@ -137,10 +140,10 @@ const About = () => {
                             </li>
                         </ul>
 
-                        <div class="details">
+                        <div class="details font-bold">
                             <h2>RAFIUN ISRAT VABNA
                                 <br />
-                                <span class="job-title">MERN-STACK DEVELOPER</span>
+                                <span class="job-title"><p className='font-semibold'>MERN-STACK DEVELOPER</p></span>
                             </h2>
                         </div>
                     </div>
@@ -148,7 +151,7 @@ const About = () => {
 
                 {/* DEVeLPER 4 / */}
                 <div
-                     class="card-wrapper">
+                    class="card-wrapper">
 
                     <div class="card-container">
 
@@ -180,10 +183,10 @@ const About = () => {
                             </li>
                         </ul>
 
-                        <div class="details">
+                        <div class="details font-bold">
                             <h2>SHAKIL AHMED KHAN
                                 <br />
-                                <span class="job-title">WEB DEVELOPER</span>
+                                <span class="job-title "><p className='font-semibold'>WEB DEVELOPER</p> </span>
                             </h2>
                         </div>
                     </div>

@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold ">CUST Programming Club</h1>
-          <p className="mb-5 ">
+          <p className="mb-5 font-bold">
             Department of Computer Science and Engineering and Computer Programming Club (CPC) successfully arranged the initiation ceremony.  - Spring 2022, at Auditorium, Campus, CUST.
           </p>
         </div>
