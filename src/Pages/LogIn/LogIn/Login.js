@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate} from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 import Alertp from '../../Alert/Alertp'
@@ -7,49 +7,50 @@ const Login = () => {
 
 
   const [loginData, setLoginData] = useState({});
-  const { loginUser, user, isLoading, authError,setIsLoading } = useAuth();
+  const { loginUser, user, isLoading, authError, setIsLoading } = useAuth();
 
   const location = useLocation();
   const history = useNavigate();
 
 
   const handleOnChange = e => {
-      const field = e.target.name;
-      const value = e.target.value;
-      const newLoginData = { ...loginData }
-      newLoginData[field] = value;
-      setLoginData(newLoginData);
+    const field = e.target.name;
+    const value = e.target.value;
+    const newLoginData = { ...loginData }
+    newLoginData[field] = value;
+    setLoginData(newLoginData);
 
   }
 
   const handleLogIn = e => {
-      loginUser(loginData.email, loginData.password)
-      .then((usercredential)=>{const user= usercredential.user
+    loginUser(loginData.email, loginData.password)
+      .then((usercredential) => {
+        const user = usercredential.user
         console.log(user);
-       
-    }).then(()=>{
+
+      }).then(() => {
         setIsLoading(false)
         history('/')
-    });
+      });
 
-      e.preventDefault();
+    e.preventDefault();
   }
- 
-console.log(loginData)
+
+  console.log(loginData)
 
 
-// console.log(handleLogIn)
+  // console.log(handleLogIn)
 
 
 
 
-    return (
-        <div className="flex justify-center">
-        <div className="rounded-lg shadow-lg bg-white max-w-sm">
-          <a href="#!">
-            <img className="rounded-t-lg" src="https://www.hirestar.io/jp/assets/login_new.jpg" alt="" />
-          </a>
-          <div className="p-6">
+  return (
+    <div className="flex justify-center">
+      <div className="rounded-lg shadow-lg bg-white max-w-sm">
+        <a href="#!">
+          <img className="rounded-t-lg" src="https://www.hirestar.io/jp/assets/login_new.jpg" alt="" />
+        </a>
+        <div className="p-6">
           {authError && <Alertp >{authError}</Alertp>}
           <form onSubmit={handleLogIn}>
                
@@ -83,7 +84,8 @@ console.log(loginData)
           </div>
         </div>
       </div>
-    );
+   
+  );
 };
 
 export default Login;

@@ -1,15 +1,18 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Notic from './Notic';
+import NoticeData from './NoticeData';
+// import NoticeModal from './NoticeModal';
 
 const Notice = () => {
+    const [notices, setNotices] = useState([])
+    useEffect(() => {
+        fetch("https://desolate-headland-20264.herokuapp.com/notice?fbclid=IwAR0k2suNoR36ZE3k1U741J26njG_VLIIIPH6ob4T6Q4bASfVoykDmxDuo0s")
+            .then(res => res.json())
+            .then(data => setNotices(data))
+    }, [])
+    // console.log(notices[1].noticeBody);
 
-    const [notices,setNotices]=useState([])
-
-    useEffect(()=>{
-        fetch("https://desolate-headland-20264.herokuapp.com/notice").then(res=>res.json()).then(data=>setNotices(data.reverse()))
-    },[])
     return (
         <div>
             <section className="flex flex-col justify-center antialiased  text-gray-600 p-4">
@@ -25,23 +28,21 @@ const Notice = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-full">
-                    {/* <!-- Card --> */}
-                    <div className="max-w-2xl mx-auto  shadow-lg rounded-lg" style={{ backgroundColor: "#193d52" }}>
-                       {
-                        notices.map(notice=><Notic
-                        key={notice._id}
-                        notice={notice}
-                        ></Notic>)
-                       }
-                    </div>
-                </div>
+                
             </section>
-    
+            
+            <section className="flex flex-col justify-center antialiased  text-gray-600 p-4">
+                {
+                    notices.map(n =><>
+                         <NoticeData n={n}></NoticeData></>
+
+                    )
+                }
+            </section>
+       
 
 
-
-        </div>
+        </div >
     );
 };
 

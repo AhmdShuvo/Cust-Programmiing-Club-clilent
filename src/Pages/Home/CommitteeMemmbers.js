@@ -22,7 +22,7 @@ const CommitteeMemmbers = () => {
             <div className="commiteeMemberscontainer">
                 <div className="box">
                     <div className="imgBox">
-                        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/272619609_2148501048652105_5399183547860637310_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHsYjn_zuX7f8svxBdT64r0BS7979sbMwUFLv3v2xszBWkbAgCsplN7SLjxifO8wF_50sfsCWFXET9elXW4k8L-&_nc_ohc=JOfQQaDG6hAAX_48-Uj&_nc_ht=scontent.fdac7-1.fna&oh=00_AT_e5HLnLvyMdpdbnh4lH5dm4gthMoBO9JlnA82VRVBu7g&oe=62EB08C9" alt="" />
+                        <img src="./images/aminul.jpg" alt="" />
                     </div>
                     <div className="content">
                         <h2>Md. Aminul Islam<br />
@@ -41,7 +41,9 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-                        <img src="./images/50626.jpg" alt="" />
+                        <img src="./images/arif.jpg" alt="" />
+
+
                     </div>
                     <div className="content">
                         <h2>Ariful Islam <br />
@@ -68,7 +70,7 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-                        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/277802870_1605790496459065_4753792774501787359_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEbfmcWeOIAgWRhsVsB3QWsZuVZ5VOJo-Rm5VnlU4mj5BE1YAEUuu_EOm80zwMdFdK_dsuIMzipky4Op6fXlpft&_nc_ohc=r8lpVxCFbMkAX8cpDT6&_nc_ht=scontent.fdac7-1.fna&oh=00_AT9d7rzY_1893Yj-4gV7s61uE5Iz2SmqUsIwxx3RpJ4KNg&oe=62EB58D8" alt="" />
+                        <img src="./images/fahad.jpg" alt="" />
                     </div>
                     <div className="content">
                         <h2>Fahad Bin Aziz<br />
@@ -77,7 +79,7 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-                        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/273169042_320294090035764_4370449685666685955_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeELTTwFDlVcX_dh0F2qZZ9koDxQ_YQAhKWgPFD9hACEpc5aGntUUSHpLApqPGc3MqomVaIFirmbxI5M0QaxNQux&_nc_ohc=XmVyL5QJLuMAX__CorE&_nc_ht=scontent.fdac7-1.fna&oh=00_AT-FOPmaFCNcN17_dznF8U_luIGyws79K68F7kOT3yKPHw&oe=62EBE822" alt="" />
+                        <img src="./images/vabna.jpg" alt="" />
                     </div>
                     <div className="content">
                         <h2>Rafiun Israt<br />
@@ -86,7 +88,7 @@ const CommitteeMemmbers = () => {
                 </div>
                 <div className="box">
                     <div className="imgBox">
-                        <img src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/273710188_1058253164720920_1968900449200685059_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEkpjvDcLWuu7jIM3X-yNCQy18N7j9nYhTLXw3uP2diFH9zfN7QBdnj1Q5EbnGpCAa4y3CNvD0jeqIw67Ucpnpu&_nc_ohc=Okz85uKzuKAAX8us46z&_nc_ht=scontent.fdac7-1.fna&oh=00_AT9pseLGaSMiO8r46ygAzg1nnOAZenFP_EL_9BxsMu9dJQ&oe=62EB311B" alt="" />
+                        <img src="./images/tutul.jpg" alt="" />
                     </div>
                     <div className="content">
                         <h2>Tutul Hossain<br />

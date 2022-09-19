@@ -7,7 +7,7 @@ const NotFound = () => {
         <center>
             <div style={{display:'float',left:"30%", top:"20%",position:'absolute'}} >
             <h1 className='text-white text-8xl '>404 Page Not Found </h1><br /><br /><br />
-            <Link className='text-danger text-5xl ' to='/' >Go to homePage </Link>
+            <Link className='text-danger text-5xl ' to='/' ><button>Go to homePage </button></Link>
           </div>
           </center>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="1165.59998 -435 1780.00012 779.59998" style={{enableBackground: 'new 1165.59998 -435 1780.00012 779.59998'}} xmlSpace="preserve">

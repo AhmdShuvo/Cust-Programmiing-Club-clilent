@@ -11,8 +11,10 @@ const Gallary = () => {
       <a className="tile-link" href="/">
         <img
           className="tile-img tile-img1"
-          src="./images/50626.jpg"
+          src="./images/clubgallary/club-image-1.jpg"
           alt="Imagee"
+          width="750px"
+
         />
       </a>
     </div>
@@ -22,7 +24,7 @@ const Gallary = () => {
       <a className="tile-link" href="/">
         <img
           className="tile-img tile-img2"
-          src="./images/50626.jpg"
+          src="../images/clubgallary/image-2.jpg"
           alt="Imagee"
         />
       </a>
@@ -33,7 +35,7 @@ const Gallary = () => {
       <a className="tile-link" href="/">
         <img
           className="tile-img tile-img3"
-          src="./images/50626.jpg"
+          src="../images/clubgallary/image-3.jpg"
           alt="Imagee"
         />
       </a>
@@ -44,7 +46,7 @@ const Gallary = () => {
       <a className="tile-link" href="/">
         <img
           className="tile-img tile-img4"
-          src="./images/50626.jpg"
+          src="../images/clubgallary/img-4.jpg"
           alt="Imagee"
         />
       </a>
@@ -55,51 +57,7 @@ const Gallary = () => {
       <a className="tile-link" href="/">
         <img
           className="tile-img tile-img5"
-          src="./images/50626.jpg"
-          alt="Imagee"
-        />
-      </a>
-    </div>
-  </div>
-  <div className="grid-block">
-    <div className="tile">
-      <a className="tile-link" href="/">
-        <img
-          className="tile-img tile-img6"
-          src="./images/50626.jpg"
-          alt="Imagee"
-        />
-      </a>
-    </div>
-  </div>
-  <div className="grid-block">
-    <div className="tile">
-      <a className="tile-link" href="/">
-        <img
-          className="tile-img tile-img8"
-          src="./images/50626.jpg"
-          alt="Imagee"
-        />
-      </a>
-    </div>
-  </div>
-  <div className="grid-block">
-    <div className="tile">
-      <a className="tile-link" href="/">
-        <img
-          className="tile-img tile-img9"
-          src="./images/50626.jpg"
-          alt="Imagee"
-        />
-      </a>
-    </div>
-  </div>
-  <div className="grid-block">
-    <div className="tile">
-      <a className="tile-link" href="/">
-        <img
-          className="tile-img tile-img10"
-          src="./images/50626.jpg"
+          src="../images/clubgallary/img-5.jpg"
           alt="Imagee"
         />
       </a>

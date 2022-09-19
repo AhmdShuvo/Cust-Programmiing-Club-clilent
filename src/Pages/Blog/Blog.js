@@ -27,9 +27,18 @@ const Blog = () => {
       <div>
 
 
+         {/* <Link to= "/texteditor">
+               <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
+                  <i className="fa-solid fa-plus"></i>
+               </button>
+            </Link>
+
+           <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog' /> */}
+
+
          {/* <h1 className='text-center text-4xl'>BLOGS</h1> */}
          <div className='sticky top-0 '>
-           <Link to="/blogs/upload">  <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
+            <Link to="/blogs/upload">  <button className="btn btn-circle btn-outline absolute right-10 btnTopPosition" title='Add a new blog'>
                <i className="fa-solid fa-plus"></i>
             </button></Link>
          </div>
@@ -54,15 +63,15 @@ const Blog = () => {
                   </div>
                </div>
                <div className="flex flex-wrap -mx-4">
-                    
-                    {
-                     blogs.map(Blog=><SingleBlog
-                      key={Blog._id}
-                      blogs={Blog}
+
+                  {
+                     blogs.map(Blog => <SingleBlog
+                        key={Blog._id}
+                        blogs={Blog}
                      ></SingleBlog>)
-                    }
-                    
-          
+                  }
+
+
                </div>
             </div>
          </section>
