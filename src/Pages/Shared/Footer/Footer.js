@@ -45,12 +45,6 @@ const Footer = () => {
         </div>
         <p> &copy;  Central University of Science And Technology  </p>
         <div className="md:place-self-center md:justify-self-end">
-
-
-          <p>
-            ACME Industries Ltd. <br />
-            Providing reliable tech since 1992
-          </p>
         </div >
         <div className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">
