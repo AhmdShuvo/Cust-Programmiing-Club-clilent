@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import initializeFirebase from "../Pages/LogIn/Firebase/firebase.init.js"
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, updateProfile, getIdToken, signOut } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, updateProfile, getIdToken, signOut, sendPasswordResetEmail } from "firebase/auth";
 
 
 
@@ -61,6 +61,20 @@ const useFirebase = () => {
 
     }
 
+
+    const forgetPassword=(email)=>{
+        sendPasswordResetEmail(auth, email)
+        .then(() => {
+          // Password reset email sent!
+
+          // ..
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
+    }
 
      // Observe user state
 
@@ -142,7 +156,7 @@ const useFirebase = () => {
         approved,
         
         logOut,
-        saveUsertoDb
+        saveUsertoDb,forgetPassword
 
     }
 };

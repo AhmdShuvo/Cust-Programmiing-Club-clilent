@@ -25,6 +25,7 @@ import Wait from './Pages/WaitForApproval/Wait';
 import BlogDetail from './Pages/Blog/BlogDetails/BlogDetail';
 // import Research from './Pages/Research/Research';
 import NoticeModal from './Pages/Notice/NoticeModal';
+import ForgotPass from './Pages/LogIn/LogIn/ForgotPass';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="forgot-password" element={<ForgotPass />} />
           <Route path="register" element={<Register />} />
           <Route
             path='blogs'
