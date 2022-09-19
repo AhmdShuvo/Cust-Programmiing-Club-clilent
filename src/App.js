@@ -52,7 +52,6 @@ function App() {
           ></Route>
           <Route path="blogs" element={<Blog />} />
           <Route path="about" element={<About />} />
-          <Route path="research" element={<Research />} />
           <Route path="blogs/blog/:id" element={<BlogDetail />} />
           <Route path="notice" element={<Notice />} />
           <Route path="events" element={<Event />} />
