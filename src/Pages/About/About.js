@@ -4,6 +4,10 @@ import "./About.css"
 const About = () => {
     return (
         <div>
+
+            {/* DEVELOPER 1 //
+            
+             */}
             <div className="flex flex-wrap justify-center mt-[30px] mb-[15px]">
                 <div className="w-full px-4">
                     <div className="text-center mx-auto  max-w-[510px]">
@@ -14,6 +18,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            {/* DEveloper 2  */}
             <div class="container flex flex-wrap justify-center ">
 
                 <div class="card-wrapper">
@@ -56,6 +62,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* developer 3  */}
                 <div class="card-wrapper">
 
                     <div class="card-container">
@@ -136,7 +144,11 @@ const About = () => {
                             </h2>
                         </div>
                     </div>
-                </div><div class="card-wrapper">
+                </div>
+
+                {/* DEVeLPER 4 / */}
+                <div
+                     class="card-wrapper">
 
                     <div class="card-container">
 
