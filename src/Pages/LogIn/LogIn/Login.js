@@ -57,11 +57,12 @@ const Login = () => {
 
             {/* Email input */}
             <div className="mb-6">
-              <input type="text" pattern='[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+.(edu)+.(bd)' name="email" onChange={handleOnChange} className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" required />
+            <label className='text-red-600' htmlFor="email"><small>Please Use Your Education email Address </small></label>
+              <input type="email" pattern='[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+.(edu)+.(bd)' name="email" onChange={handleOnChange} className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" required />
             </div>
             {/* Password input */}
             <div className="mb-6">
-              <input type="password" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password" name="password" onChange={handleOnChange} required />
+              <input type="password" className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password  8 characters" name="password" onChange={handleOnChange} required />
             </div>
             <div className="flex justify-between items-center mb-6">
 

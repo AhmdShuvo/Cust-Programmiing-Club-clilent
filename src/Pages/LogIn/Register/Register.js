@@ -21,7 +21,7 @@ const Register = () => {
     e.preventDefault();
 
     if (loginData.password !== loginData.password2) {
-      alert("Didn't matched the password")
+      alert("Password did not matched")
       return;
     }
     registerUser(loginData.email, loginData.password, loginData.name, history);
@@ -57,10 +57,10 @@ const Register = () => {
                   <input name='email' type="email" pattern='[A-Z0-9a-z._%+-]+@+(cust)+.(edu)+.(bd)' placeholder="  Email" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
                 </div>
                 <div className="mt-7">
-                  <input name='password' type="password" placeholder="  Password" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
+                  <input name='password' type="password" placeholder=" Password  8 characters" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
                 </div>
                 <div className="mt-7">
-                  <input name='password2' type="password" placeholder="  Confirm Password" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
+                  <input name='password2' type="password" placeholder="  Confirm Password  8 characters" className="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 text-gray-700" onChange={handleOnChange} required />
                 </div>
                 <div className="mt-7">
                   <button className="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
