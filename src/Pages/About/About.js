@@ -18,7 +18,7 @@ const About = () => {
 
                 <div class="card-wrapper">
 
-                    <div class="card">
+                    <div class="card-container">
 
                         <div class="card-image">
                             <img src="./images/arif.jpg" alt="profile one" />
@@ -58,7 +58,7 @@ const About = () => {
                 </div>
                 <div class="card-wrapper">
 
-                    <div class="card">
+                    <div class="card-container">
 
                         <div class="card-image">
                             <img src="./images/shuvo.jpg" alt="profile one" />
@@ -98,7 +98,7 @@ const About = () => {
                     </div>
                 </div><div class="card-wrapper">
 
-                    <div class="card">
+                    <div class="card-container">
 
                         <div class="card-image">
                             <img src="./images/vabna.jpg" alt="profile one" />
@@ -138,7 +138,7 @@ const About = () => {
                     </div>
                 </div><div class="card-wrapper">
 
-                    <div class="card">
+                    <div class="card-container">
 
                         <div class="card-image">
                             <img src="./images/shakil.jpg" alt="profile one" />
