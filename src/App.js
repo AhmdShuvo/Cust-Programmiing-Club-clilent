@@ -29,6 +29,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Wait from './Pages/WaitForApproval/Wait';
 import BlogDetail from './Pages/Blog/BlogDetails/BlogDetail';
 import Research from './Pages/Research/Research';
+import NoticeModal from './Pages/Notice/NoticeModal';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="blogs/blog/:id" element={<BlogDetail />} />
           <Route path="notice" element={<Notice />} />
+          <Route path="notice/:id" element={<NoticeModal />} />
           <Route path="events" element={<Event />} />
           <Route path="/blogs/upload" element={<Upload />} />
           <Route path="login" element={<Login />} />

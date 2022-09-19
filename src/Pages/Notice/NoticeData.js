@@ -33,14 +33,13 @@ const NoticeData = ({ n }) => {
                                 {/* <!-- Card body --> */}
                                 <div className="flex items-end justify-between whitespace-normal">
                                     {/* <!-- Paragraph --> */}
-                                    <div className="max-w-md text-indigo-100">
-                                        <p className="mb-2">{noticeBody}...</p>
-                                    </div>
-
-                                    <a className="flex-shrink-0 flex items-center justify-center text-indigo-600 h-10 " href='g'>
+                                 
+                                    <Link to={`/notice/${_id}`} className="flex-shrink-0 flex items-center justify-center text-indigo-600 h-10 ">
                                         <label HtmlFor="my-modal-3" className="modal-button block font-bold text-white text-xs hover:text-white	cursor-pointer hover:uppercase" >Read more</label>
 
-                                    </a>
+                                    </Link>
+
+                                
                                 </div>
                             </div>
                         </div>
