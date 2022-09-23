@@ -35,12 +35,14 @@ const Navigation = () => {
       <div className="navbar-center">
         <a href='/' className="btn btn-ghost normal-case text-xl">
           <img src="./images/291605210_454802836471911_4788002618510328382_n.png" alt="" width='50px' />
-          <h1 className="ml-3"> CUST PROGRAMMING CLUB</h1>
+         
         </a>
       </div>
       <div className="navbar-end xs:mr-[10px] md:mr-[60px] lg:mr-[68px]">
 
-        {user.email && <button className="btn btn-ghost btn-circle dropdown">
+        {user.email && 
+
+        <button className="btn btn-ghost btn-circle dropdown  dropdown-left">
           <div className="indicator">
 
             <div className="avatar placeholder ">
@@ -48,7 +50,7 @@ const Navigation = () => {
               <div className="bg-neutral-focus text-neutral-content rounded-full w-12 ">
                 {/* user Avater /Photo url  */}
                 <span> <img src={user.photoURL} alt="user-phot" /></span>
-                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-8">
+                <ul tabIndex={0} className="dropdown-content menu p-2 rounded-box w-5 mt-7">
                   <li><p>{user.displayName}</p></li>
 
                   <li><Link to="/">  <button onClick={logOut} className="signup-button ms-5">Log Out</button></Link> </li>
@@ -56,7 +58,9 @@ const Navigation = () => {
               </div>
             </div>
           </div>
-        </button>}
+        </button>
+        
+        }
       </div>
     </div>
 

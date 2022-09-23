@@ -14,7 +14,7 @@ const BlogDetail = () => {
 
     return (
         <div>
-            <div className="max-w-[370px] mx-auto my-6 mb-10">
+            <div className="container mx-28 my-6 mb-10">
                 <h1>{blogs.heading}</h1>
                 {
 
